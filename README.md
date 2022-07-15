@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+0. Initialize a public github repo for this project
+1. Create react app (TypeScript or Javascript - does not matter)
+2. React app (UI) should have 30 text fields (edit box) arranged into 3 groups (10 fields per group) and should have adaptive layout + submit button
+3. Each edit box should be a separate react component (you can make ~5 different components and reuse them on the form)
+4. Each react component should have:
+
+* visible and inner values (for example "United State" for visible and "US" for inner values)
+* regex mask
+* predictive input after 3 symbols
+* remember its state until Submit is pressed
+
+5. Submit button should send JSON-serialized item from filled fields via POST request (you can use anything you want as mock-API)
+
+
+Сделал все, кроме как 30 полей создавать.
+Я наверное создал 7 полей, причем один чекбокс и один где файлы принимает.
+
+В общем у нас есть 4 страницы.
+На первом странице 5 полей.
+На втором 2 поля и чекбоксы
+На третьем одно поле где принимает файлы
+На последнем таблица показывается всеми заполненными полями и отправка в бэкэнд.

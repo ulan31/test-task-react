@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { StepOne } from "./StepOne";
 import { StepTwo } from "./StepTwo";
 import { StepThree } from "./StepThree";
@@ -11,12 +11,12 @@ function App() {
     <>
       <Header/>
       <Router>
-          <Routes>
-              <Route exact path="/" element={ StepOne }/>
-              <Route path="/step2" element={ StepTwo }/>
-              <Route path="/step3" element={ StepThree }/>
-              <Route path="/result" element={ Result }/>
-          </Routes>
+          <Switch>
+              <Route exact path="/" component={ StepOne }/>
+              <Route path="/step2" component={ StepTwo }/>
+              <Route path="/step3" component={ StepThree }/>
+              <Route path="/result" component={ Result }/>
+          </Switch>
       </Router>
     </>
   );
